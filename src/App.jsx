@@ -29,16 +29,21 @@ class App extends Component {
         return (
             <div className="App">
 
-            <div className="C-Title">Count-Down to: {this.state.deadline}</div>
+                <div className="C-Title">Count-Down to: {this.state.deadline}</div>
 
-            <Clock deadline={this.state.deadline} />
+                <Clock deadline={this.state.deadline} />
 
-            <Form inline>
-                <FormControl onChange={event => this.setState({newDeadline: event.target.value})} type="text" className="inp-sty" placeholder="New Date"/>
-                <br/>
-                <Button onClick={() => this.changeDeadLine()}>Submmit New Date</Button>
-            </Form>
+                <Form inline>
+                    <FormControl onChange={event => this.setState({newDeadline: event.target.value})} type="text" className="inp-sty" placeholder="New Date"/>
+                    <br/>
+                    <Button onClick={() => this.changeDeadLine()}>Submmit New Date</Button>
+                </Form>
 
+            </div>
+
+            <br/><br/>
+            <div>
+                <P>By: Edmundo Rubio</P>
             </div>
         )
     }
