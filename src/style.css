@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(128, 244, 233);
+
+}
+
+
+.App{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 10%;
+}
+
+.clock-cont{
+    display: flex;
+    justify-content: center;
+}
+
+.clock{
+    margin: 10px;
+}
+
+.C-Title{
+    font-size: 40px;
+}
+
+.inp-sty{
+    font-size: 25px;
+    margin: 5px;
+}
