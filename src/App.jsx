@@ -25,28 +25,26 @@ class App extends Component {
 
 
         // This is the HTML that will be disply to user.
-    render(){
-        return (
-            <div className="App">
+        render(){
+            return (
+                <div className="App">
 
-                <div className="C-Title">Count-Down to: {this.state.deadline}</div>
+                    <div className="C-Title">Count-Down to: {this.state.deadline}</div>
 
-                <Clock deadline={this.state.deadline} />
+                    <Clock deadline={this.state.deadline} />
 
-                <Form inline>
-                    <FormControl onChange={event => this.setState({newDeadline: event.target.value})} type="text" className="inp-sty" placeholder="New Date"/>
+                    <Form inline>
+                        <FormControl onChange={event => this.setState({newDeadline: event.target.value})} type="text" className="inp-sty" placeholder="New Date"/>
+                        <br/>
+                        <Button onClick={() => this.changeDeadLine()}>Submmit New Date</Button>
+                    </Form>
                     <br/>
-                    <Button onClick={() => this.changeDeadLine()}>Submmit New Date</Button>
-                </Form>
+                    <div><p className="p-aut">By: Edmundo Rubio </p></div>
 
-                <br/>
-                <P>By: Edmundo Rubio</P>
-            </div>
-
-
-        )
-    }
-}
+                </div>
+            )
+        }
+        }
 
 
-export default App;
+        export default App;
