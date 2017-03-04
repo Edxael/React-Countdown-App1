@@ -39,12 +39,11 @@ class App extends Component {
                     <Button onClick={() => this.changeDeadLine()}>Submmit New Date</Button>
                 </Form>
 
-            </div>
-
-            <br/><br/>
-            <div>
+                <br/>
                 <P>By: Edmundo Rubio</P>
             </div>
+
+
         )
     }
 }
